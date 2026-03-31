@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMU Clic - Sign In</title>
+    <style>
+        /* A close match to the university login look */
+        body { font-family: Arial, sans-serif; background-color: #f7f7f7; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-card { background: white; padding: 40px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+        .logo { max-width: 150px; margin-bottom: 10px; }
+        h1 { font-size: 24px; color: #333; margin-bottom: 25px; }
+        .input-group { text-align: left; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; color: #555; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button.sign-in { width: 100%; padding: 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        .ms-sign-in { margin-top: 15px; background-color: white; border: 1px solid #ccc; color: #555; padding: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 100%; border-radius: 4px;}
+        .ms-sign-in img { max-width: 16px; margin-right: 8px; }
+        .note { font-size: 11px; color: #777; margin-top: 20px; text-align: left; line-height: 1.3; }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <img src="OPSE_logo.png" alt="MMU Clic Logo" class="logo">
+        <h1>CLiC</h1>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="userId">User ID</label>
+                <input type="text" id="userId" placeholder="Enter User ID" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <button type="submit" class="sign-in">Sign In</button>
+        </form>
+
+        <button class="ms-sign-in">
+            <img src="microsoft logo.png" alt="MS Logo">
+            Sign in with Microsoft
+        </button>
+
+        <div class="note">
+            You may Sign In using either Email OTP authentication or Sign In with Microsoft...<br>
+            • If you choose Sign in with Microsoft, and wish to fully log out from your Microsoft account, visit <a href="#">the logout link</a> to complete the sign-out process.<br>
+            [ ] Enable Screen Reader Mode
+        </div>
+    </div>
+
+    <script>
+        // MOCK LOGIC: Any login submission goes to the OTP page
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents actual submission
+            window.location.href = "clic-otp.html"; // Redirects to the OTP page
+        });
+    </script>
+
+</body>
+</html>

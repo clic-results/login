@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Result Slip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #333;
+            margin: 20px;
+            line-height: 1.4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .logo-text {
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        .university-name {
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .title {
+            text-align: center;
+            color: #0056b3;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 10px 0;
+        }
+        .info-table {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table td {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+        }
+        .label {
+            font-weight: bold;
+            width: 20%;
+        }
+        .trimester-header {
+            background-color: #5bc0de;
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            margin-bottom: 0;
+        }
+        .summary-bar {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 0;
+        }
+        .summary-bar td {
+            border: 1px solid #000;
+            padding: 4px 8px;
+            font-weight: bold;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0;
+        }
+        .results-table th {
+            background-color: #a9a9a9;
+            text-align: left;
+            padding: 5px 8px;
+            border: 1px solid #000;
+        }
+        .results-table td {
+            padding: 5px 8px;
+            border: 1px solid #000;
+        }
+        .grading-section {
+            margin-top: 20px;
+            display: flex;
+            font-size: 10px;
+        }
+        .grading-col {
+            flex: 1;
+        }
+        .footer-note {
+            margin-top: 30px;
+            font-size: 10px;
+            border-top: 1px solid #ccc;
+            padding-top: 5px;
+        }
+        .signature-area {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-text">MULTIMEDIA</div>
+        <div class="university-name">UNIVERSITY &reg;</div>
+    </div>
+
+    <div class="title">Examination Result Slip</div>
+
+    <table class="info-table">
+        <tr>
+            <td class="label">Student ID</td><td>: 252FC252VP</td>
+        </tr>
+        <tr>
+            <td class="label">Name</td><td>: MUHAMMAD FAYED BIN MOHD FAZAL</td>
+        </tr>
+        <tr>
+            <td class="label">Status</td><td>: Active</td>
+        </tr>
+        <tr>
+            <td class="label">Degree</td><td>: Foundation in Computing</td>
+        </tr>
+        <tr>
+            <td class="label">Faculty</td><td>: Faculty of Computing and Informatics</td>
+        </tr>
+    </table>
+
+    <div class="trimester-header">Trimester October/November 2025</div>
+    
+    <table class="summary-bar">
+        <tr>
+            <td>GPA: 3.37</td>
+            <td>CGPA: 3.33</td>
+            <td>Academic Status: PASS</td>
+        </tr>
+        <tr>
+            <td>Hours: 19</td>
+            <td>Total Hours: 30</td>
+            <td>Total Points: 98.40</td>
+        </tr>
+    </table>
+
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Course Title</th>
+                <th>Credit Hour</th>
+                <th>Grade</th>
+                <th>Course Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>CMF1114</td><td>MULTIMEDIA FUNDAMENTALS</td><td>4</td><td>B</td><td>PASS</td></tr>
+            <tr><td>CMT1124</td><td>MATHEMATICS II</td><td>4</td><td>C+</td><td>PASS</td></tr>
+            <tr><td>CSP1114</td><td>PROBLEM SOLVING AND PROGRAM DESIGN</td><td>4</td><td>B+</td><td>PASS</td></tr>
+            <tr><td>GNB1114</td><td>INTRO TO BUSINESS MANAGEMENT</td><td>4</td><td>A</td><td>PASS</td></tr>
+            <tr><td>LEE1113</td><td>ESSENTIAL ENGLISH</td><td>3</td><td>A</td><td>PASS</td></tr>
+        </tbody>
+    </table>
+
+    <div style="font-weight: bold; margin-top: 10px;">Grading Scheme</div>
+    <div class="grading-section">
+        <div class="grading-col">
+            PS : Pass<br>
+            FL/F : Fail<br>
+            AU : Audit Subject
+        </div>
+        <div class="grading-col">
+            U : Unofficial Withdrawal<br>
+            BAR : Barred from Sitting Examination<br>
+            I : Incomplete
+        </div>
+    </div>
+
+    <div class="footer-note">
+        This is a computer generated slip. No signature is required. Verification from Examination and Records Unit is required for official use.
+    </div>
+
+    <div class="signature-area">
+        Certified by:<br><br><br>
+        Signature:<br>
+        ___________________________<br>
+        Name and Stamp:
+    </div>
+
+</body>
+</html>
